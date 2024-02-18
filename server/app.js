@@ -15,7 +15,9 @@ dotenv.config()
 const app=express();
 
 
-app.use(cors({origin: true,credentials: true}));
+app.use(cors({
+    origin: 'https://journl-mu.vercel.app',
+    credentials: true}));
 
 app.use(express.json());
 app.use(cookieParser());
