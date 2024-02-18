@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://journl-server.vercel.app/:8000';
+const API_URL = 'https://journl-server.vercel.app/';
 axios.defaults.withCredentials = true;
 
 async function httpPostUser(userDetails){

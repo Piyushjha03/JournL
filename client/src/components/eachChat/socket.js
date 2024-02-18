@@ -1,4 +1,4 @@
 import { io } from 'socket.io-client';
 
-const Endpoint='https://journl-server.vercel.app:8001'
+const Endpoint='https://journl-server.vercel.app'
 export const socket=io(Endpoint)
