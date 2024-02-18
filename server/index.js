@@ -16,10 +16,9 @@ ioserver.listen(8001,()=>{
 })
 export const io = new Server(ioserver,{
     pingTimeout: 60000,
-    cors: {
-        origin: "*",
-        methods: ["GET", "POST","PATCH","DELETE","PUT"]
-      }
+    cors:( {
+        origin: "https://journl-mu.vercel.app",
+      })
 
 });
 

@@ -16,7 +16,7 @@ const app=express();
 
 
 app.use(cors({
-    origin: '*',
+    origin:"https://journl-mu.vercel.app",
     credentials: true}));
 
 app.use(express.json());
