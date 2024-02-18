@@ -19,8 +19,8 @@ try {
     res.cookie('jwt',token,{
         // httpOnly: true,
         maxAge: 3* 24 * 60 * 60 *1000 ,// 3 days in ms
-secure:true,
-SameSite:'none',
+        secure:true,
+        SameSite: 'None',
     })
     const {_id,userName,firstName,lastName,profilePicture,followers,following,Tracks}=await getuserstatus
 
@@ -67,7 +67,7 @@ async function httpPostUser(req,res){
         maxAge: 3* 24 * 60 * 60 *1000,
          // 3 days in ms
          secure:true,
-         SameSite:'none',
+         SameSite: 'None',
     })
     return res.status(201).json(postuserstatus.userName)
 
