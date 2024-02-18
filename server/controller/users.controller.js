@@ -21,6 +21,7 @@ try {
         sameSite: 'None',
         maxAge: 3* 24 * 60 * 60 *1000 ,// 3 days in ms
         secure:true,
+        Domain:"journl-mu.vercel.app",
     })
     const {_id,userName,firstName,lastName,profilePicture,followers,following,Tracks}=await getuserstatus
 
@@ -68,6 +69,7 @@ async function httpPostUser(req,res){
          // 3 days in ms
          secure:true,
          SameSite: 'None',
+         Domain:"journl-mu.vercel.app",
     })
     return res.status(201).json(postuserstatus.userName)
 
