@@ -1,0 +1,149 @@
+.navbar_wrapper{
+height: 100%;
+width: 250px;
+padding: 12px;
+border-right: solid 1px #222;
+font-family: 'LabilGrotesk';
+font-weight: 400;
+}
+.navbar_content{
+    display: flex;
+    flex-direction: column;
+
+}
+.navbar_logo{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar_options{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+.navbar_home,.navbar_search,.navbar_account,.navbar_chat,.navbar_create{
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    padding: 4px;
+}
+.home_hover,.search_hover,.account_hover,.chat_hover,.create_hover{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.home_hover:hover,.search_hover:hover,.account_hover:hover,.chat_hover:hover,.create_hover:hover{
+    background: mediumslateblue;
+}
+.home_content,.search_content,.account_content,.chat_content,.create_content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+}
+.home_icon,.search_icon,.account_icon,.chat_icon,.create_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+
+}
+.home_name,.search_name,.account_name,.chat_name,.create_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.activeElement .home_hover,.activeElement .search_hover,.activeElement .account_hover,.activeElement .chat_hover,.activeElement .create_hover{  
+        color:#a594fd; 
+}
+.activeElement .home_hover:hover,.activeElement .search_hover:hover,.activeElement .account_hover:hover ,.activeElement .chat_hover:hover,.activeElement .create_hover:hover{  
+        color:#fff; 
+}
+
+@media (max-width: 1200px) {
+    .navbar_wrapper{
+        height: 100%;
+        width: 100px;
+        overflow: hidden;
+    }
+    .home_hover,.search_hover,.account_hover,.chat_hover,.create_hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home_content,.search_content,.account_content,.chat_content,.create_content{
+        justify-content: center;
+        align-items: center;
+    }
+    .home_name,.search_name,.account_name,.chat_name,.create_name{
+        display: none;
+    }
+    
+}
+@media (max-width: 550px){
+    .navbar_wrapper{
+        position: fixed;
+        right: 0;
+        bottom:0;
+        height: 60px;
+        width: 100%;
+        background: #000;
+        z-index: 9999999;
+    }
+    .navbar_content{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar_logo{
+        display: none;
+    }
+    .navbar_options{
+        display: flex;
+        flex-direction: row;
+        flex:1;
+        gap:12px;
+    }
+    .navbar_home,.navbar_search,.navbar_account,.navbar_chat,.navbar_create{
+        height: 60px;
+        width: 100%;
+        cursor: pointer;
+        padding: 4px;
+    }
+    .home_hover,.search_hover,.account_hover,.chat_hover,.create_hover{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    .home_hover:hover,.search_hover:hover,.account_hover:hover,.chat_hover:hover,.create_hover:hover{
+        background: mediumslateblue;
+    }
+    .home_content,.search_content,.account_content,.chat_content,.create_content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+    .home_icon,.search_icon,.account_icon,  .chat_icon,.create_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+    
+    }
+    .home_name,.search_name,.account_name,.chat_name,.create_name{
+        display: none;
+    
+    }
+}

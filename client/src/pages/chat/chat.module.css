@@ -1,0 +1,207 @@
+.chatPage_wrapper{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+}
+.chat_nav{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main_nav{
+    width: 100%;
+    height: 300px;
+    padding: 8px 12px;
+}
+.main_nav_content{
+    width: 100%;
+    height: 100%;
+    background: #222;
+    border-radius: 12px;
+overflow: scroll;
+}
+.profile_nav{
+    width: 100%;
+    flex: 1;
+    padding: 8px 12px;
+    overflow: scroll;
+    max-height: 500px;
+}
+.profile_nav_content{
+    width: 100%;
+    height: 100%;
+    background: #222;
+    border-radius: 12px;
+}
+.chat_main{
+    float: 1;
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+
+}
+/* navbaaarrr */
+.navbar_wrapper{
+    height: 100%;
+    width: 100%;
+    padding: 12px;
+    font-family: 'LabilGrotesk';
+    font-weight: 400;
+    }
+    .navbar_content{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .navbar_logo{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .navbar_options{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar_home,.navbar_search,.navbar_account,.navbar_chat,.navbar_create{
+        height: 60px;
+        width: 100%;
+        cursor: pointer;
+        padding: 4px;
+    }
+    .home_hover,.search_hover,.account_hover,.chat_hover,.create_hover{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    .home_hover:hover,.search_hover:hover,.account_hover:hover,.chat_hover:hover,.create_hover:hover{
+        background: mediumslateblue;
+    }
+    .home_content,.search_content,.account_content,.chat_content,.create_content{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 24px;
+    }
+    .home_icon,.search_icon,.account_icon,.chat_icon,.create_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+    
+    }
+    .home_name,.search_name,.account_name,.chat_name,.create_name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .activeElement .home_hover,.activeElement .search_hover,.activeElement .account_hover,.activeElement .chat_hover,.activeElement .create_hover{  
+            color:#a594fd; 
+    }
+    .activeElement .home_hover:hover,.activeElement .search_hover:hover,.activeElement .account_hover:hover ,.activeElement .chat_hover:hover,.activeElement .create_hover:hover{  
+            color:#fff; 
+    }
+
+
+    .profile_nav_wrapper{
+        width: 100%;
+        height: 100%;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        overflow: scroll;
+    }
+    .eachProfile{
+        width: 100%;
+        border-radius: 12px;
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 2px;
+cursor: pointer;
+    }
+    .eachProfile:hover{
+        background: #00000065;
+    }
+
+    .eachProfile_pfp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >img{
+            width: 60%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+    }
+    .eachProfile_info{
+        width: 100%;
+        height: 100%;
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3px;
+        overflow: hidden;
+    }
+    .eachProfile_username{
+        width: 100%;
+        height: 50%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+.eachProfile_lastmessage{
+    width: 100%;
+    height: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.chat_main_new{
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+    background: #222;
+    border-radius: 12px;
+}
+.mobile_chat{display: none;}
+@media (max-width:550px) {
+    .backLogo{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size: 48px;
+    }
+    .chat_nav,.chat_main{
+        display: none;
+
+    }
+
+    .chat_nav_mobile{
+        display: block;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+   .mobile_chat{
+    display: block;
+    float: 1;
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+   }
+}

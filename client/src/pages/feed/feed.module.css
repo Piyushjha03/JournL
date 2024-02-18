@@ -1,0 +1,11 @@
+.feed_wrapper{
+    max-width: 800px;
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
+    padding: 12px 24px;
+    border-right: solid 1px #2e2e2e;
+}
+.feed_wrapper::-webkit-scrollbar {
+    display: none;
+  }

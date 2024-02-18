@@ -1,0 +1,88 @@
+
+*:focus{
+    outline: none;
+}
+
+.register_page_wrapper{
+    height:100vh;
+    width: 100vw;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register_card{
+    transition: ease 600ms;
+    position: relative;
+height: 40em;
+width:25em;
+border: 1px solid rgb(255 255 255 / 5%);
+    border-radius: 1.5rem;
+background: #222222;
+background: radial-gradient(at left top, #222222, #010101);
+    margin: 1rem;
+}
+.register_card:after {  
+    content: "";
+    height: 90px;
+    width: 1px;  
+    position: absolute;  
+    left: -1px;
+    top: 65%;
+    transition: top, opacity;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+    background: linear-gradient(
+      transparent,
+      mediumslateblue,
+      transparent
+    );
+    opacity: 0;
+  }
+  .register_card:hover{
+    transition: ease 600ms;
+    scale: 1.1;
+  }
+  
+  .register_card:hover:after {
+    top: 25%;
+    opacity: 1;
+  }
+.register_form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.register_form > input{
+    color: white;
+    height: 2rem;
+    width: 12rem;
+    border:1px solid rgb(255 255 255 / 20%); 
+    border-radius: 24px;
+    background: transparent;
+    padding-left: 1rem;
+}
+
+.createAccount_bttn,.gotoLogin_bttn{
+    padding: 0.5rem 1rem;
+    border:1px solid rgb(255 255 255 / 20%); 
+    border-radius: 24px;
+    background: transparent;
+    padding-left: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:1rem;
+}
+.register_bttn_text,.gotoLogin_bttn_text{
+    padding-right: 1rem;
+}
+
+.createAccount_bttn:hover,.gotoLogin_bttn:hover{
+    scale: 1.05;
+    background: mediumslateblue;
+}

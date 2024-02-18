@@ -1,0 +1,246 @@
+.myAccount_wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    border-right: solid 1px #2e2e2e;
+}
+.myAccount_wrapper::-webkit-scrollbar{
+    display: none;
+}
+.userInfo_wrapper{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-top: 40px;
+
+
+}
+.userPass_wrapper{
+    height: 300px;
+    width: 500px;
+    background-color: #ded8c0;
+    background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userPass_inner_wrapper{
+    height: 90%;
+    width: 90%;
+    padding: 12px;
+    background-color: #cdc8b9;
+    background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
+    border-radius: 12px;
+    display: flex;
+    position: relative;
+}
+.userPass_left{
+    padding: 10px;
+    border-right: dashed #222 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.userPass_dp{
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 180px;
+width: 160px;
+    >img{
+        height: 100%;
+        width: 100%;
+       object-fit: cover;
+       border-radius: 6px;
+    }
+
+}
+.userPass_userName{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+    background: rgba(124, 104, 238, 0.647);
+border-radius: 6px;
+}
+.userPass_right{
+  /* width: 100%; */
+  padding: 10px;
+  flex-grow:1;
+  display: flex;
+  flex-direction: column;
+  gap:12px
+}
+.pass_card_text{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.tracks_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+.userPass_edit{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.firstName,.lastName,.followerCount,.followingCount,.trackCount{
+    max-width: 224px;
+    overflow: hidden;
+    span{
+        overflow: scroll;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+   
+}
+.firstName_input{
+    width: 100px;
+    font-size: 16px;
+    color: mediumslateblue;
+    background: transparent;
+    outline: none;
+-webkit-appearance: none; 
+box-shadow: none !important; 
+border: none;
+}
+.add_new{
+    width: fit-content;
+    height: 100%;
+    padding: 24px;
+   
+    align-items: center;
+    position: relative;
+    background: radial-gradient(at top left, #151515,#101010);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:12px;
+
+>button{
+    background: none;
+color: inherit;
+border: none;
+padding: 0;
+font: inherit;
+cursor: pointer;
+outline: inherit;
+font-size: 24px;
+}
+}
+
+.trackCard_wrapper{
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+   
+    background: radial-gradient(at top left, #151515,#101010);
+
+    >button{
+        cursor: pointer;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        font-size: 24px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: rgb(240, 110, 110);
+
+    }
+
+}
+.addPhoto{
+    cursor: pointer;
+    font-size: 48px;
+    color:mediumslateblue;
+}
+.addCaption,.addDesc{
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    >input{
+        height: 50px;
+        width: 70%;
+        border-radius: 12px;
+        padding: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #222222e4;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        outline: inherit;
+    }
+}
+input[type=text]{
+    padding: 12px;
+}
+.trackCard_Name{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgb(11, 11, 11);
+    background:linear-gradient(0deg,#181818,transparent 50%);
+    
+    }
+    .create,.upload{
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgb(11, 11, 11);
+    background:#222222cf;
+
+    }
+@media (max-width:550px) {
+    .userPass_wrapper{
+        height: 300px;
+        width: 100%;
+        flex: 1;
+    }   
+}

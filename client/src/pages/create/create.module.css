@@ -1,0 +1,16 @@
+.tracks_wrapper{
+    padding: 12px 24px;
+    width: 100%;
+    gap: 24px;
+    height: 100%;
+    overflow: scroll;
+    border-right: solid 1px #2e2e2e;
+}
+.createTrack{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

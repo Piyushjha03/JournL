@@ -1,0 +1,97 @@
+.innerWrapper{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    background: #222;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+ }
+ .name_heading{
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #2e2e2e;
+    border-radius: 12px;
+ }
+ .profilePicture_container{
+    width: 48px;
+    height: 48px;
+    >img{
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+ }
+ .heading_username{
+    float: 1;
+    font-size: 24px;
+ }
+
+ .chat_display{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    overflow: scroll;
+    background: #2e2e2e;
+    border-radius: 12px;
+ }
+ .keyboardInput{
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    background: #2e2e2e;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    
+ }
+ .keyboardInput_text{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    border:none;
+    opacity: 1;
+    font-size: 16px;
+    color:white;
+    padding: 0 12px;
+ }
+ .sendButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }
+.chat_display_recived{
+   padding: 12px;
+   display: flex;
+   justify-content: flex-start;
+}
+.chat_display_recived_content{
+   background: rgb(92, 67, 236);
+   padding: 6px;
+   border-radius: 24px;
+   max-width: 50%;
+
+}
+.chat_display_sent{
+   padding: 12px;
+   display: flex;
+   justify-content: flex-end;
+}
+.chat_display_sent_content{
+   background: rgb(131, 120, 195);
+   padding: 6px;
+   border-radius: 24px;
+   max-width: 60%;
+   word-wrap: break-word;
+
+}
