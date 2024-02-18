@@ -18,9 +18,9 @@ try {
     const token=createToken(getuserstatus._id)
     res.cookie('jwt',token,{
         // httpOnly: true,
+        SameSite: None,
         maxAge: 3* 24 * 60 * 60 *1000 ,// 3 days in ms
         secure:true,
-        SameSite: 'None',
     })
     const {_id,userName,firstName,lastName,profilePicture,followers,following,Tracks}=await getuserstatus
 
