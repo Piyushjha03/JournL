@@ -18,7 +18,7 @@ try {
     const token=createToken(getuserstatus._id)
     res.cookie('jwt',token,{
         // httpOnly: true,
-        SameSite: None,
+        sameSite: 'None',
         maxAge: 3* 24 * 60 * 60 *1000 ,// 3 days in ms
         secure:true,
     })
