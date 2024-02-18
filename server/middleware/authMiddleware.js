@@ -28,7 +28,7 @@ const requireAuth=(req,res,next)=>{
         console.log("redirecting");
         // return res.redirect('/login')
         return res.status(404).json({
-            error:"SESSION TIMED OUT"
+            error:"SESSION TIMED OUT : LOGIN AGAIN"
         });
     }
 
