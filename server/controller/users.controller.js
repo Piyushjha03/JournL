@@ -18,7 +18,8 @@ try {
     const token=createToken(getuserstatus._id)
     res.cookie('jwt',token,{
         // httpOnly: true,
-        maxAge: 3* 24 * 60 * 60 *1000 // 3 days in ms
+        maxAge: 3* 24 * 60 * 60 *1000 ,// 3 days in ms
+secure:true,
     })
     const {_id,userName,firstName,lastName,profilePicture,followers,following,Tracks}=await getuserstatus
 
@@ -61,8 +62,10 @@ async function httpPostUser(req,res){
     const token=createToken(postuserstatus._id)
  
     res.cookie('jwt',token,{
-        httpOnly: true,
-        maxAge: 3* 24 * 60 * 60 *1000 // 3 days in ms
+        // httpOnly: true,
+        maxAge: 3* 24 * 60 * 60 *1000,
+         // 3 days in ms
+         secure:true,
     })
     return res.status(201).json(postuserstatus.userName)
 
@@ -70,7 +73,8 @@ async function httpPostUser(req,res){
 
 function createToken(id){
     return jwt.sign({id}, process.env.JWT_SECRET,{
-        expiresIn: 3* 24 * 60 * 60 //3 days in seconds
+        expiresIn: 3* 24 * 60 * 60, //3 days in seconds
+        secure:true,
     }); 
 }
 
