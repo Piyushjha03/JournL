@@ -11,9 +11,7 @@ const PORT=process.env.PORT || 8080;
 
 // socket io server
 const ioserver=http.createServer(app);
-ioserver.listen(8001,()=>{
-    console.log(`Socket server running on 8001`);
-})
+
 export const io = new Server(ioserver,{
     pingTimeout: 60000,
     cors:( {
@@ -81,4 +79,8 @@ async function connectMongo(){
 connectMongo();
     server.listen(PORT,()=>{
         console.log(`Server running on ${PORT}`);
+    })
+
+    ioserver.listen(8001,()=>{
+        console.log(`Socket server running on 8001`);
     })
