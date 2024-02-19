@@ -21,7 +21,7 @@ try {
         sameSite: 'None',
         maxAge: 3* 24 * 60 * 60 *1000 ,// 3 days in ms
         secure:true,
-        Domain:".vercel.app",
+        Domain:"up.railway.app",
     })
     const {_id,userName,firstName,lastName,profilePicture,followers,following,Tracks}=await getuserstatus
 
