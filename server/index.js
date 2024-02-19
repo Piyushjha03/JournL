@@ -14,7 +14,7 @@ const PORT=process.env.PORT || 8080;
 export const io = new Server(server,{
     pingTimeout: 60000,
     cors:( {
-        origin: "https://journl-mu.vercel.app",
+        origin: "https://journl.up.railway.app",
         credentials: true,
       })
 
