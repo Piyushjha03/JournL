@@ -9,10 +9,9 @@ import { Server } from 'socket.io';
 const server=http.createServer(app);
 const PORT=process.env.PORT || 8080;
 
-// socket io server
-const ioserver=http.createServer(app);
 
-export const io = new Server(ioserver,{
+
+export const io = new Server(server,{
     pingTimeout: 60000,
     cors:( {
         origin: "https://journl-mu.vercel.app",
@@ -79,8 +78,4 @@ async function connectMongo(){
 connectMongo();
     server.listen(PORT,()=>{
         console.log(`Server running on ${PORT}`);
-    })
-
-    ioserver.listen(8001,()=>{
-        console.log(`Socket server running on 8001`);
     })
