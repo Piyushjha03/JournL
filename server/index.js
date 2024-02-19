@@ -15,6 +15,7 @@ export const io = new Server(server,{
     pingTimeout: 60000,
     cors:( {
         origin: "https://journl-mu.vercel.app",
+        credentials: true,
       })
 
 });
