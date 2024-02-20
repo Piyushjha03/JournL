@@ -101,6 +101,7 @@ font-weight: 400;
     .navbar_content{
         display: flex;
         flex-direction: row;
+        overflow: scroll;
     }
     .navbar_logo{
         display: none;
@@ -110,6 +111,7 @@ font-weight: 400;
         flex-direction: row;
         flex:1;
         gap:12px;
+    flex-wrap: nowrap;
     }
     .navbar_home,.navbar_search,.navbar_account,.navbar_chat,.navbar_create{
         height: 60px;
