@@ -14,7 +14,7 @@ const PORT=process.env.PORT || 8080;
 export const io = new Server(server,{
     pingTimeout: 60000,
     cors:( {
-        origin: "https://journl.up.railway.app",
+        origin: "https://journl.onrender.com",
         credentials: true,
       })
 

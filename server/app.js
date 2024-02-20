@@ -16,7 +16,7 @@ const app=express();
 
 
 app.use(cors({
-    origin:"https://journl.up.railway.app",
+    origin:"https://journl.onrender.com",
     credentials: true}));
 
 app.use(express.json());

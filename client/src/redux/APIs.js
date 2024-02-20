@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://journl-server.up.railway.app/';
+const API_URL = 'https://journl-server.onrender.com';
 axios.defaults.withCredentials = true;
 
 async function httpPostUser(userDetails){
