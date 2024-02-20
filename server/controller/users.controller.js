@@ -69,7 +69,7 @@ async function httpPostUser(req,res){
          // 3 days in ms
          secure:true,
          SameSite: 'None',
-         Domain:".vercel.app",
+         Domain:".onrender.com",
     })
     return res.status(201).json(postuserstatus.userName)
 
