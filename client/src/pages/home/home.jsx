@@ -3,9 +3,15 @@ import { Navbar } from "../../components/navbar/navbar";
 import style from "./home.module.css";
 import { useSelector } from "react-redux";
 import { FaSignOutAlt, FaUserEdit } from "react-icons/fa";
+import { httpLogoutUser } from "../../redux/APIs";
 
 function Home() {
   const nav = useNavigate();
+
+  const handleLogoutAction = async () => {
+    await httpLogoutUser();
+    nav("/login");
+  };
   const currentUser = useSelector((state) => state?.userDetailsSlice?.userInfo);
   return (
     <>
@@ -22,7 +28,7 @@ function Home() {
               <div className={style.userInfo}>
                 <button
                   onClick={() => {
-                    nav("/login");
+                    handleLogoutAction();
                   }}
                 >
                   <FaSignOutAlt />
