@@ -10,6 +10,7 @@ function Home() {
 
   const handleLogoutAction = async () => {
     await httpLogoutUser();
+    localStorage.removeItem("persist:root");
     nav("/login");
   };
   const currentUser = useSelector((state) => state?.userDetailsSlice?.userInfo);
