@@ -1,6 +1,6 @@
-import { io } from 'socket.io-client';
+import { io } from "socket.io-client";
 
-const Endpoint='https://journl-server.onrender.com'
-export const socket=io(Endpoint,{
-    withCredentials:true
-})
+const Endpoint = "https://journl-server.onrender.com";
+export const socket = io(Endpoint, {
+  withCredentials: true,
+});

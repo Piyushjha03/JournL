@@ -1,2 +1,7 @@
-*{
-    font-family: 'Courier Prime', monospace;}
+* {
+  font-family: "Courier Prime", monospace;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
