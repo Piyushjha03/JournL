@@ -58,7 +58,7 @@ export const Navbar = () => {
               navigate("/");
             }}
           >
-            logo
+            Journl
           </div>
           <div className={style.navbar_options}>
             <div
